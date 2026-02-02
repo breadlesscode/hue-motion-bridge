@@ -15,7 +15,7 @@ Homebridge plugin for the new **MotionAware** zones of the Philips Hue Bridge Pr
 
 ### Via Command Line
 ```bash
-sudo npm install -g homebridge-hue-motion-aware
+hb-service add homebridge-hue-motion-aware
 ```
 
 ## Configuration
@@ -38,13 +38,13 @@ The plugin includes utility scripts to test connection and monitor events. These
 ### Test Connection & Pairing
 This script tests connectivity and helps you generate an API key if you don't want to do it through Homebridge.
 ```bash
-npx ts-node scripts/test-connection.ts <BRIDGE_IP>
+npm run test-connection -- <BRIDGE_IP>
 ```
 
 ### Real-time Motion Monitor
 Monitor your MotionAware zones in real-time.
 ```bash
-npx ts-node scripts/debug-motion.ts <BRIDGE_IP>
+npm run debug-motion -- <BRIDGE_IP>
 ```
 
 ## Quality Standards

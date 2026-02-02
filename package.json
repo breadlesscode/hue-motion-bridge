@@ -1,6 +1,6 @@
 {
   "name": "homebridge-hue-motion-aware",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Homebridge plugin for Philips Hue MotionAware zones",
   "keywords": [
     "homebridge-plugin",
@@ -23,6 +23,8 @@
     "watch": "tsc -w",
     "lint": "oxlint .",
     "format": "oxfmt .",
+    "test-connection": "ts-node scripts/test-connection.ts",
+    "debug-motion": "ts-node scripts/debug-motion.ts",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
@@ -35,6 +37,7 @@
     "homebridge": "^1.7.0",
     "oxfmt": "latest",
     "oxlint": "latest",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "engines": {

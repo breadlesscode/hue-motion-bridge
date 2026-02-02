@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.11] - 2026-02-02
+- Added `npm run test-connection` and `npm run debug-motion` scripts for easier debugging.
+- Updated README with the new script commands.
+
 ## [1.0.10] - 2026-02-02
 - Improved authentication storage: Standalone scripts now prioritize `.homebridge` directory or fall back to the home directory.
 - Properly utilizes Homebridge's `api.user.storagePath()` for plugin settings.
