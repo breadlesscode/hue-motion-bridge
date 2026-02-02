@@ -1,0 +1,25 @@
+{
+  "pluginAlias": "HueMotionAware",
+  "pluginType": "platform",
+  "headerDisplay": "Philips Hue MotionAware Plugin Configuration",
+  "footerDisplay": "Please follow the pairing process to get your API Key.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "bridgeIp": {
+        "title": "Hue Bridge IP",
+        "type": "string",
+        "description": "The IP address of your Philips Hue Bridge.",
+        "placeholder": "192.168.1.x",
+        "format": "ipv4",
+        "required": true
+      },
+      "apiKey": {
+        "title": "Hue API Key",
+        "type": "string",
+        "description": "Your Philips Hue application key (leave empty to start pairing).",
+        "placeholder": "Get this via pairing process"
+      }
+    }
+  }
+}
